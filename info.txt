@@ -62,8 +62,4 @@ faire nos modifications :
 - git add --all    => tout ajouter
 - git add page.php => ajouter un fichier précis
 
-git commit -a -m "Premiere mise à jour"
-git push -u origin recette
 
- '-a' => all prise en compte des fichiers modifiés et supprimés
- '-m "message"' =>  libéllé du commit
