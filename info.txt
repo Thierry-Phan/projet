@@ -1,0 +1,65 @@
+------------- GIT MIS EN PLACE --------------
+1 . Créer un compte github.com 
+
+2 . Installer gi sur son poste
+
+    winsows : https://gitforwindows.org/
+            (option windows bash, option notepad++ en GUI)
+    mac: https://git-scm.com/download/mac
+
+3 . Ouvrir invite de commande (cmd) et on se place dans le dossier du projet que l'on souhaite ajouter à git
+
+Commandes DOS 
+- cd    => (change directory) changer de repertoire
+- cd .. => (revenir en rep parent)
+- mkdir => (crer un dossier) make directory
+- rmdir => (supprimer un dossier) remove directory
+- :q    => quitter l'operation
+
+4 . Créer un repository distant sur github
+
+---------- INIT et DEPOT INITIAL -----------
+
+lancer git sur le dossier ciblé:
+- git init
+
+voir la config : 
+- git config -l
+
+ajouter une entrée de config :
+- git config --global user.name "Thierry-Phan"
+
+remplacer une entrée existante :
+- git config --global --replace-all user.name "Thierry-Phan"
+
+retirer une entrée :
+- git config --global --unset user.name
+
+relier le depot local au depot distant :
+- git remote add origin https://github.com/Thierry-Phan/projet.git
+
+ajouter les fichiers au projet local :
+- git add --all
+
+commiter les fichiers du projet local :
+- git commit -m "Depot Initial"
+
+envoyer sur le depot distant :
+- git push -u origin master
+
+------- GIT CREATION DE BRANCHE --------
+
+creation d'une branche: 
+- git branch recette
+
+copie du projet sur la branche locale recette :
+- git checkout recette
+
+voir les branche. '*' indique la branche courante : 
+- git branch
+
+faire nos modifications : 
+- git add --all    => tout ajouter
+- git add page.php => ajouter un fichier précis
+
+

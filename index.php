@@ -1,3 +1,5 @@
 <?php
 
-Echo "Première version de mon projet"
+Echo "Première version de mon projet";
+
+echo "Mise à jour 1";
